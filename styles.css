@@ -1,0 +1,419 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #4A4B2F; /* Neutral background color */
+    color: #D4DF9E; /* Light color for text */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(18, 16, 14, 0.8); /* Semi-transparent dark background */
+    color: #D4DF9E; /* Light color for text */
+    padding: 15px 40px;
+    margin: 20px auto 10px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensures the navbar is relative for z-index */
+    z-index: 1000; /* Keeps the navbar on top */
+}
+
+.navbar-logo a {
+    color: #D4DF9E; /* Light color for logo text */
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar-links a {
+    color: #D4DF9E; /* Light color for nav links */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #6B654B; /* Muted color on hover */
+    color: #D4DF9E;
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    color: #D4DF9E;
+    height: 100vh;
+    margin-top: -80px; /* Adjust if necessary */
+    padding-top: 80px; /* Adjust if necessary */
+}
+
+.welcome-section .text-content {
+    flex: 1;
+    padding: 20px;
+    color: #D4DF9E;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-section .image-content {
+    flex: 1;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional: to make the image section stand out */
+}
+
+.welcome-section h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #D4DF9E;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.welcome-section .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #D4DF9E;
+    background-color: #6B654B;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.welcome-section .btn:hover {
+    background-color: #4A4B2F;
+    transform: translateY(-2px);
+}
+
+/* Quick Look Section Styles */
+.quick-look-section {
+    padding: 50px 20px;
+    background-color: #30321C; /* Darker neutral color */
+}
+
+.quick-look-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #D4DF9E; /* Light color for section header */
+}
+
+.quick-look-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quick-look-card {
+    background-color: #6B654B; /* Muted color for card background */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-look-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #4A4B2F; /* Darker color on hover */
+}
+
+.quick-look-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #D4DF9E; /* Light color for card title */
+}
+
+.quick-look-card p {
+    font-size: 18px;
+    color: #D4DF9E; /* Light color for card number */
+}
+
+/* Cards Section Styles */
+.cards-section {
+    padding: 50px 20px;
+    background-color: #4A4B2F; /* Neutral background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #30321C; /* Darker neutral color */
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #D4DF9E; /* Light color for card title */
+    text-align: center;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #D4DF9E; /* Light color for card text */
+    margin-bottom: 10px;
+}
+
+.card .number {
+    font-weight: 700;
+    color: #D4DF9E; /* Highlight color for numbers */
+}
+
+/* Section 1: Safety Instructions */
+.safety-instructions {
+    background-color: #30321C;
+    padding: 60px 20px;
+}
+
+.safety-instructions h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: #D4DF9E;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.instruction-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.instruction-category {
+    background-color: #4A4B2F;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+}
+
+.instruction-category h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #D4DF9E;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #6B654B;
+    padding-bottom: 10px;
+}
+
+.instruction-category ol {
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #D4DF9E;
+}
+
+.instruction-category ol li {
+    margin-bottom: 10px;
+}
+
+/* Section 2: Travel Essentials */
+.travel-essentials {
+    background-color: #4A4B2F;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.travel-essentials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #D4DF9E;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.circular-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.circular-cards .card {
+    background-color: #6B654B;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D4DF9E;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Section 3: Do's and Don'ts */
+.dos-and-donts {
+    background-color: #30321C;
+    padding: 60px 20px;
+}
+
+.dos-and-donts h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: #D4DF9E;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dos-donts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.dos, .donts {
+    background-color: #4A4B2F;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.dos h3, .donts h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #D4DF9E;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #6B654B;
+    padding-bottom: 10px;
+}
+
+.dos ul, .donts ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #D4DF9E;
+}
+
+.dos ul li, .donts ul li {
+    margin-bottom: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #4A4B2F;
+        border: 1px solid #333;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-content {
+        background-size: cover;
+        background-position: center;
+        height: 200px; /* Adjust height as needed */
+    }
+
+    .quick-look-section, .cards-section {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo a {
+        font-size: 1.2rem;
+    }
+
+    .image-content {
+        height: 150px; /* Adjust height as needed */
+    }
+}
